@@ -149,7 +149,7 @@ function set_width() {
     if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
     if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
   }
-  if (document.body.clientWidth) {
+  if (document.getElementById("neve").clientWidth) {
     if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
     if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
   }
@@ -516,7 +516,7 @@ html {
 @media screen and (max-width: 1000px) and (orientation: landscape){
 #everything { position: absolute; zoom: 80%; left:-60px; top:10px;}
 }
-</style>
+</style><div id="neve" style="z-index:-5;"></div>
 
 <div id="everything">
 
