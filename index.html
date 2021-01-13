@@ -112,7 +112,7 @@ function baby_its_cold_outside() { if (document.getElementById) {
   i.width="1px";
   i.height="1px";
   i.backgroundColor="transparent";
-  document.getElementById("everything").appendChild(boddie);
+  document.getElementById("neve").appendChild(boddie);
   set_width();
   for (var i=0; i<flakes; i++) {
     flks[i]=createDiv(3, 3, colour);
@@ -517,6 +517,8 @@ html {
 #everything { position: absolute; zoom: 80%; left:-60px; top:10px;}
 }
 </style>
+
+<div id="neve" style="z-index:-5;"></div>
 
 <div id="everything">
 
