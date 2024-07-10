@@ -642,8 +642,8 @@ nocaps = original.toLowerCase();
 document.textConvForm.textConvArea.value = nocaps;} 
 function convert2Hacker(){ 
 original = document.textConvForm.textConvArea.value; 
-normal = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y", "z"]; 
-hacker = ["𝑎","𝑏","𝑐","𝑑","𝑒","𝑓","𝑔","ℎ","𝑖","𝑗","𝑘","𝑙","𝑚","𝑛","𝑜","𝑝","𝑞","𝑟","𝑠","𝑡","𝑢","𝑣","𝑤","𝑥","𝑦","𝑧"]; 
+normal = ["a","à","á","â","ã","b","c","d","e","é","ê","f","g","h","i","j","k","l","m","n","o","ó","ô","õ","p","q","r","s","t","u","ú","v","w","x","y", "z"]; 
+hacker = ["𝑎","𝑎̀","𝑎́","𝑎̂","𝑎̃","𝑏","𝑐","𝑑","𝑒","𝑒́","𝑒̂","𝑓","𝑔","ℎ","𝑖","𝑗","𝑘","𝑙","𝑚","𝑛","𝑜","𝑜́","𝑜̂","𝑜̃","𝑝","𝑞","𝑟","𝑠","𝑡","𝑢","𝑢́","𝑣","𝑤","𝑥","𝑦","𝑧"]; 
 haxored = original; 
 for (i = 0; i < normal.length; i++){ 
 haxored = haxored.replace(RegExp(normal[i],"gi"),hacker[i]);} 
